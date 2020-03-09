@@ -58,6 +58,9 @@ public class App
         System.out.println("Damaged: " + car2.damaged);
         System.out.println("Color: " + car2.color);
 
-
+        // modulo operator
+//        System.out.println("Nr par " + (4 % 3 == 0));
+//        System.out.println("Nr par " + (4 % 2 == 0));
+//        System.out.println(4 % 2 == 0);
     }
 }
