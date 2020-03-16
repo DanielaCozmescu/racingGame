@@ -18,7 +18,11 @@ public class App
 
         System.out.println( "Welcome to the racing game!" );
 
-        Car carReference = new Car();
+        Engine engine1= new Engine();
+        engine1.manufacturer = "VW";
+        engine1.capacity = 2000;
+
+        Car carReference = new Car(engine1);
         carReference.name = "Audi";
         carReference.color = "red";
         carReference.maxSpeed = 260;
@@ -30,9 +34,6 @@ public class App
 //        carReference.engine.manufacturer = "VW";
 //        carReference.engine.capacity = 2000;
 
-        Engine engine1= new Engine();
-        engine1.manufacturer = "VW";
-        engine1.capacity = 2000;
 
         carReference.engine=engine1;
 
@@ -64,11 +65,12 @@ public class App
         System.out.println("Racing nr: " + carReference.racingNumber);
         System.out.println("Damaged: " + carReference.damaged);
 
-        carReference = null;
+       // carReference = null;
 
-        Car car2 = new Car();
+        Car car2 = new Car(new Engine());
         car2.name = "Lamborghini";
         car2.damaged = true;
+
         System.out.println("Properties of " + car2.name);
         System.out.println("Damaged: " + car2.damaged);
         System.out.println("Color: " + car2.color);
